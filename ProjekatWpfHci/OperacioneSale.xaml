@@ -1,0 +1,48 @@
+﻿<Page x:Class="ProjekatWpfHci.OperacioneSale"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjekatWpfHci"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="OperacioneSale" Background="White">
+
+    <Grid>
+        <DockPanel>
+            <Menu VerticalAlignment="Top" DockPanel.Dock="Top" Background="#D5E1DB" Height="50" FontFamily="Tahoma" FontSize="14">
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Pocetna strana" Click="MenuItem_Click" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="File" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Edit" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="View" Background="#D5E1DB"/>
+                <MenuItem Header="Help" Margin ="0 0 0 0">
+                    <MenuItem Header="_O Aplikaciji"></MenuItem>
+                </MenuItem>
+
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Lekovi" Click="MenuItem_Click_1" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Raspored" Click="MenuItem_Click_2" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Termini" Click="MenuItem_Click_3" Background="#D5E1DB"/>
+                
+            </Menu>
+        </DockPanel>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackPanel Background="AliceBlue" Margin="0 50 0 0" Grid.Row="0" Orientation="Horizontal">
+                <Label FontFamily="Calibri" FontSize="20" Margin="20 24 0 0" FontWeight="Bold" >Unesite opseg datuma:</Label>
+                <Label FontFamily="Calibri" FontWeight="Black" FontStyle="Italic" FontSize="15"  Margin="50 28 10 0" >od</Label>
+                <DatePicker Width="200" Height="25" VerticalAlignment="Stretch"/>
+                <Label FontFamily="Calibri" FontWeight="Black" FontStyle="Italic" FontSize="15" Margin="30 28 10 0" >do</Label>
+                <DatePicker Width="200" Height="25" VerticalAlignment="Stretch"/>
+                <Button Content="Pretraži" Margin="40 0 0 0" Click="SaleClick"></Button>
+            </StackPanel>
+
+            <Frame x:Name="OperacijeFrame" Grid.Row="1"></Frame>
+        </Grid>
+        
+    </Grid>
+</Page>

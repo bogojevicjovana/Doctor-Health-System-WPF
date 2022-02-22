@@ -1,0 +1,29 @@
+﻿<Window x:Class="ProjekatWpfHci.Help.Window6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatWpfHci.Help"
+        mc:Ignorable="d"
+        Title="Window6" Height="600" Width="900">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="10*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Button  Margin="0 0 740 0" Content="Nazad" Click="Button_Click"></Button>
+                <Button  Content="Napred" Click="Button_Click_1"></Button>
+            </StackPanel>
+            <Image HorizontalAlignment="Left" Height="479" Margin="77,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="392" Source="Uputnica.png"/>
+            <TextBlock HorizontalAlignment="Left" Margin="454,26,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Prikaz forme za Uputnicu. Od korisnika se očekuje unos svih neophodnih polja da bi se izgenerisala Uputnica.U polje Odeljenje/Klinika treba da se navede sa kog Odeljenja je Lekar koji je izdao Uputnicu.Opcija Upućuje se na: ima tri stavke. Lekar treba da odabere jednu stavku koja podrazumijeva dalje lečenje pacijenta. Ostatak forme jesu check-boxovi i neopodno je čekirati opciju koja je odgovarajuća za lečeje pacijenta." VerticalAlignment="Top" Width="350"/>
+            <Image HorizontalAlignment="Left" Height="100" Margin="364,202,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
+            <Image HorizontalAlignment="Left" Height="311" Margin="454,163,-50,0" Grid.Row="1" VerticalAlignment="Top" Width="488" Source="upp.png"/>
+
+
+
+        </Grid>
+    </Grid>
+</Window>

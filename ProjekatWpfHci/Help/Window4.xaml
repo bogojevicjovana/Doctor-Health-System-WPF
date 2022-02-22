@@ -1,0 +1,32 @@
+﻿<Window x:Class="ProjekatWpfHci.Help.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatWpfHci.Help"
+        mc:Ignorable="d"
+        Title="Window4" Height="600" Width="900" ResizeMode="NoResize">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="10*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Button Margin="0 0 740 0" Content="Nazad" Click="Button_Click" ></Button>
+                <Button Content="Napred" Click="Button_Click_1"></Button>
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Left" Margin="415,52,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.51,1.137" Width="442"><Run Text="Ovo je prikaz prazne forme za Recept. Od korisnika se očekuje da unese sva nephodna polja. Neophodno je da se podesi Datum propisivanja leka pritiskom na DatePicker da bi se odabrao datum kada se izdaje Recept."/><InlineUIContainer>
+                    <TextBlock TextWrapping="Wrap" Text="Polje Hitnost označava da li je hitno izdavanje leka ili nije."/>
+                </InlineUIContainer></TextBlock>
+        </Grid>
+        <Image Source="Recept.png" HorizontalAlignment="Left" Height="467" Margin="28,72,0,0" VerticalAlignment="Top" Width="559"/>
+        <TextBlock HorizontalAlignment="Left" Margin="415,247,0,0" TextWrapping="Wrap" Text="U polje Ime i šifra leka neophodno je unijeti naziv lijeka i njegovu šifru. Količina lijeka se podešava uz pomoć NumericUpDown-a. Pritiskom na strelicu za gore poveća se količina lijeka, za smanjenje količine lijeka lijevim klikom miša pritisne se na strelicu ka dole." VerticalAlignment="Top" Width="463"/>
+        <TextBlock HorizontalAlignment="Left" Margin="415,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="U polju način upotrebe očekuje se kratak unos opisa za pacijenta kako se lijek konzimira. U polju napomena ukoliko treba da se naglasi neka stavka prilikom korištenja lijeka."/><InlineUIContainer>
+         
+            </InlineUIContainer></TextBlock>
+
+
+    </Grid>
+</Window>

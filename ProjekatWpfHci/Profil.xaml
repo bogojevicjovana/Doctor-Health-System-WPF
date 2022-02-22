@@ -1,0 +1,61 @@
+﻿<Page x:Class="ProjekatWpfHci.Profil"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjekatWpfHci"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Profil" Background="White">
+
+    <Grid>
+        <DockPanel>
+            <Menu VerticalAlignment="Top" DockPanel.Dock="Top" Background="#D5E1DB" Height="50" FontFamily="Tahoma" FontSize="14">
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Termini" Click="NazadClick" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="File" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Edit" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="View" Background="#D5E1DB"/>
+                <MenuItem Header="Help" Margin ="0 0 0 0">
+                    <MenuItem Header="_O Aplikaciji"></MenuItem>
+                </MenuItem>
+
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Operacione sale" Click="OperacioneSale" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Lekovi" Click="LekoviClick"  Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Raspored" Click="MenuItem_Click" Background="#D5E1DB"/>
+            </Menu>
+        </DockPanel>
+            
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Margin ="0 50 0 0" Grid.Column="0" Background="#FF88B9B4">
+                <StackPanel>
+                    <Label HorizontalAlignment="Center" FontFamily="Cambria" FontSize="35" FontWeight="Medium">Mila Milanović</Label>
+                    <Label Margin="0 70 0 0" FontFamily="Cambria" FontSize="16" FontWeight="Black">Pol: Ženski</Label>
+                    <Label Margin="0 25 0 0" FontFamily="Cambria" FontSize="16" FontWeight="Black" >Datum rođenja: 25.1.1992.</Label>
+                    <Label Margin="0 25 0 0" FontFamily="Cambria" FontSize="16" FontWeight="Black" >JMBG: 250199210835 </Label>
+                    <Label Margin="0 25 0 0" FontFamily="Cambria" FontSize="16" FontWeight="Black" >Zaposlenje: Građevinski inženjer</Label>
+                    <Label Margin="0 25 0 0" FontFamily="Cambria" FontSize="16" FontWeight="Black" >Prebivalište: Tolstojeva 14, Novi Sad</Label>
+                    <Label Margin="0 25 0 0" FontFamily="Cambria" FontSize="16" FontWeight="Black" >Kontakt: 065/785-125</Label>
+                    <Label Margin="0 25 0 0" FontFamily="Cambria" FontSize="16" FontWeight="Black" >Email: milanovicm@gmail.com</Label>
+                    <Label Margin="0 25 0 0"> </Label>
+                </StackPanel>
+            </Border>
+
+            <Grid Margin="0 50 0 0" Grid.Column="1">
+                <StackPanel Background="AliceBlue" Orientation="Horizontal" HorizontalAlignment="Center" Height="40" VerticalAlignment="Top" Width="1210">
+                    <Button BorderBrush="White" Content="Anamneza" Margin="230 0 50 0" Height="30" Click="AnamnezaClick"  Background="#FFC7EADF" FontFamily="Cambria" FontSize="20"/>
+                    <Button BorderBrush="White" Content="Medicinski karton" Margin="10 0 50 0" Click="MedicinskiKartonClick" Height="30" Background="#FFC7EADF" FontFamily="Cambria" FontSize="20" ></Button>
+                    <Button BorderBrush="White" Content="Izdaj Recept" Margin="10 0 50 0"  Height="30" Background="#FFC7EADF" FontFamily="Cambria"  Click="ReceptClick" FontSize="20" ></Button>
+                    <Button BorderBrush="White" Content="Izdaj Uputnicu" Margin="10 0 0 0" Height="30" Background="#FFC7EADF" FontFamily="Cambria"  Click="UputnicaClick" FontSize="20" ></Button>
+                </StackPanel>
+                <Frame x:Name="PodaciPacijent" Margin="0 40 0 0"></Frame>
+            </Grid>
+        </Grid>
+        <Frame x:Name="ProfilFrame"></Frame>
+    </Grid>
+</Page>

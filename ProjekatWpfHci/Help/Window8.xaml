@@ -1,0 +1,25 @@
+﻿<Window x:Class="ProjekatWpfHci.Help.Window8"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatWpfHci.Help"
+        mc:Ignorable="d"
+        Title="Window8" Height="600" Width="900">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="10*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Button  Margin="0 0 740 0" Click="Button_Click"></Button>
+                <Button></Button>
+            </StackPanel>
+            <Image HorizontalAlignment="Left" Height="132" Margin="23,30,0,0" Grid.Row="1" VerticalAlignment="Top" Width="286" Source="Raspored.png"/>
+            <TextBlock HorizontalAlignment="Left" Margin="363,48,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Lijevim klikom misa pritiskom na Raspored prikaze se raspored lekara. U Rasporedu lekar moze da vidi da li je za zadati datum slobodan ili nije, koliko zakazanih pregleda ima, akoliko operacija." VerticalAlignment="Top" Height="114"/>
+            <Image HorizontalAlignment="Left" Height="234" Margin="86,194,0,0" Grid.Row="1" VerticalAlignment="Top" Width="657" Source="Annotation 2020-06-16 091147.png"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿<Page x:Class="ProjekatWpfHci.SvojstvaSastojci.Karakteristike"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjekatWpfHci.SvojstvaSastojci"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Karakteristike" Background="#FFCFEAE1">
+
+
+    <Grid>
+        <StackPanel Grid.Row="0">
+            <TextBlock Margin="20 50 0 0" FontFamily="Calibri" FontWeight="Bold" FontSize="17" Text="Farmakodinamičke karakteristike"></TextBlock>
+            <TextBlock Margin="20 10 0 0" FontFamily="Calibri" FontSize="16" Text="Farmakoterapijska grupa: Analgetici, ATC kod: N02BE01."></TextBlock>
+            <TextBlock Margin="20 0 0 0"  FontFamily="Calibri" FontSize="16" Text="Paracetamol je analgetik i antipiretik."></TextBlock>
+            <TextBlock Margin="20 60 0 0" FontFamily="Calibri" FontWeight="Bold" FontSize="17" Text="Farmakokinetičke karakteristike"></TextBlock>
+            <TextBlock Margin="20 10 0 0" FontFamily="Calibri" FontSize="16" Text="Paracetamol se brzo i gotovo u potpunosti apsorbuje iz gastrointestinalnog trakta."></TextBlock>
+            <TextBlock Margin="20 0 0 0"  FontFamily="Calibri" FontSize="16" Text="Maksimalne koncentracije u plazmi se postižu za 30 do 60 minuta. "></TextBlock>
+            <TextBlock Margin="20 0 0 0"  FontFamily="Calibri" FontSize="16" Text="Poluživot eliminacije iz plazme iznosi 1 do 4 sata, nakon primjene terapijskih doza."></TextBlock>
+            <TextBlock Margin="20 0 0 0" FontFamily="Calibri" FontSize="16" Text= "Paracetamol se relativno ravnomjerno distribuira kroz većinu tjelesnih tečnosti"></TextBlock>
+            <TextBlock Margin="20 60 0 0"  FontWeight="Bold" FontFamily="Calibri" FontSize="17" Text= "Neklinički podaci o sigurnosti primjene"></TextBlock>
+            <TextBlock Margin="20 10 0 0"  FontFamily="Calibri" FontSize="16" Text= "Nema dodatnih nekliničkih podataka o sigurnosti primjene lijeka koji bi bili relevantni za propisivača, "></TextBlock>
+            <TextBlock Margin="20 0 0 0"  FontFamily="Calibri" FontSize="16" Text= "a koji već nisu uključeni u ostale dijelove sažetka karakteristika lijeka."></TextBlock>
+        </StackPanel>
+
+    </Grid>
+</Page>

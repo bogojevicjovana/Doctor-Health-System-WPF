@@ -1,0 +1,181 @@
+﻿<Page x:Class="ProjekatWpfHci.SalaSlobodniTermini"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjekatWpfHci"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SalaSlobodniTermini" Background="White">
+
+    <Grid>
+        <ScrollViewer Grid.Row="1" Margin="0 20 0 0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Margin="10 0 0 0" Grid.Column="0">
+                    <Border Margin="0 0 0 10">
+                        <Button Background="#FFCFF9E2" Height="120" Width="450" FontSize="20">
+                            <Button.ToolTip>
+                                Dugme za otvaranje forme za zakazivanje operacije.
+                            </Button.ToolTip>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row ="0" Text="Oznaka: Sala1" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="1" Text="Datum: 15.5.2020" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="2" Text="Vreme: 08:15" HorizontalAlignment="Center"></TextBlock>
+                                <Button Grid.Row="3" Background="White" Click="ZakazivanjeClick" Content="Zakaži operaciju"></Button>
+                            </Grid>
+                        </Button>
+                    </Border>
+
+                    <Border>
+                        <Button Background="#FFCFF9E2" Margin="0 0 0 10" Height="120" Width="450" FontSize="20">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row ="0" Text="Oznaka: Sala1" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="1" Text="Datum: 15.5.2020" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="2" Text="Vreme: 12:00" HorizontalAlignment="Center"></TextBlock>
+                                <Button Grid.Row="3" Background="White" Content="Zakaži operaciju"></Button>
+                            </Grid>
+                        </Button>
+                    </Border>
+
+                    <Border>
+                        <Button Background="#FFCFF9E2" Margin="0 0 0 10" Height="120" Width="450" FontSize="20">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row ="0" Text="Oznaka: Sala2" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="1" Text="Datum: 16.5.2020" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="2" Text="Vreme: 9:00" HorizontalAlignment="Center"></TextBlock>
+                                <Button Grid.Row="3" Background="White" Content="Zakaži operaciju"></Button>
+                            </Grid>
+                        </Button>
+                    </Border>
+
+                    <Border>
+                        <Button Background="#FFCFF9E2" Margin="0 0 0 10" Height="120" Width="450" FontSize="20">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row ="0" Text="Oznaka: Sala2" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="1" Text="Datum: 16.5.2020" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="2" Text="Vreme: 12:00" HorizontalAlignment="Center"></TextBlock>
+                                <Button Grid.Row="3" Background="White" Content="Zakaži operaciju"></Button>
+                            </Grid>
+                        </Button>
+                    </Border>
+
+                    <Border>
+                        <Button Background="#FFCFF9E2" Height="120" Width="450" FontSize="20">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row ="0" Text="Oznaka: Sala2" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="1" Text="Datum: 16.5.2020" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="2" Text="Vreme: 14:15" HorizontalAlignment="Center"></TextBlock>
+                                <Button Grid.Row="3" Background="White" Content="Zakaži operaciju"></Button>
+                            </Grid>
+                        </Button>
+                    </Border>
+
+                </StackPanel>
+
+                <StackPanel Margin="20 0 0 0" Grid.Column="1">
+                    <Border Margin="0 0 0 10">
+                        <Button Background="#FFCFF9E2" Height="120" Width="450" FontSize="20">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row ="0" Text="Oznaka: Sala3" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="1" Text="Datum: 16.5.2020" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="2" Text="Vreme: 13:00" HorizontalAlignment="Center"></TextBlock>
+                                <Button Grid.Row="3" Background="White" Content="Zakaži operaciju"></Button>
+                            </Grid>
+                        </Button>
+                    </Border>
+
+                    <Border  Margin="0 0 0 10">
+                        <Button Background="#FFCFF9E2" Height="120" Width="450" FontSize="20">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row ="0" Text="Oznaka: Sala3" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="1" Text="Datum: 17.5.2020" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="2" Text="Vreme: 08:00" HorizontalAlignment="Center"></TextBlock>
+                                <Button Grid.Row="3" Background="White" Content="Zakaži operaciju"></Button>
+                            </Grid>
+                        </Button>
+                    </Border>
+
+                    <Border Margin="0 0 0 10">
+                        <Button Background="#FFCFF9E2" Height="120" Width="450" FontSize="20">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row ="0" Text="Oznaka: Sala4" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="1" Text="Datum: 17.5.2020  " HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="2" Text="Vreme: 14:00" HorizontalAlignment="Center"></TextBlock>
+                                <Button Grid.Row="3" Background="White" Content="Zakaži operaciju"></Button>
+                            </Grid>
+                        </Button>
+                    </Border>
+
+                    <Border Margin="0 0 0 10">
+                        <Button Background="#FFCFF9E2" Height="120" Width="450" FontSize="20">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row ="0" Text="Oznaka: Sala2" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="1" Text="Datum: 18.5.2020" HorizontalAlignment="Center"></TextBlock>
+                                <TextBlock Grid.Row ="2" Text="Vreme: 14:00" HorizontalAlignment="Center"></TextBlock>
+                                <Button Grid.Row="3" Background="White" Content="Zakaži operaciju"></Button>
+                            </Grid>
+                        </Button>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

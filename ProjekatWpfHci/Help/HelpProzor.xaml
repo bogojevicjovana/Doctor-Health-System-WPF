@@ -1,0 +1,34 @@
+﻿<Window x:Class="ProjekatWpfHci.Help.HelpProzor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatWpfHci.Help"
+        mc:Ignorable="d"
+        Title="HelpProzor" Height="600" Width="900" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Margin="0 0 740 0" Content="Nazad"></Button>
+            <Button Content="Napred" Click="Button_Click"></Button>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Image HorizontalAlignment="Left" Height="258" Margin="52,37,0,0" Source="Pocetna.jpg.png" VerticalAlignment="Top" Width="550"/>
+            <TextBlock FontSize="15" HorizontalAlignment="Left" Margin="640,54,0,0" TextWrapping="Wrap" Text="Ovo je početna strana nakon prijave na sistem. Sa lijeve strane nalazi se toolbar. Pritiskom da dugme Profil, dobija se prikaz profila. Pritiskom na dugme Odjavi se, vrši se odjava sa sistema." VerticalAlignment="Top" Height="272" Width="215"/>
+            <Image Source="Termini.jpg.png" HorizontalAlignment="Left" Height="124" Margin="52,342,0,0" VerticalAlignment="Top" Width="252"/>
+            <TextBlock HorizontalAlignment="Left" Margin="335,342,0,0" TextWrapping="Wrap" Text="Lijevim klikom misa, pritiskom na Termini, otvara se stranica sa Terminima pacijenata. Lijevim klikom misa na Lekove otvara se stranica sa lekovima, lijevim klikom na Operacione sale otvara se stranica gdje se može zakazati operacija. Lijevim klikom na Raspored, dobija se uvid u Raspored Lekara." VerticalAlignment="Top" Height="124" Width="427"/>
+            
+             
+
+
+
+        </Grid>
+        <Frame x:Name="HelpFrame" Grid.Row="1"></Frame>
+
+    </Grid>
+</Window>

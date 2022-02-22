@@ -1,0 +1,27 @@
+﻿<Window x:Class="ProjekatWpfHci.Help.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatWpfHci.Help"
+        mc:Ignorable="d"
+        Title="Window3" Height="600" Width="900" ResizeMode="NoResize">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="10*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Button Margin="0 0 740 0" Content="Nazad" Click="Button_Click"></Button>
+                <Button Content="Napred" Click="Button_Click_1"></Button>
+            </StackPanel>
+            <Image HorizontalAlignment="Left" Source="Medicinski.png" Height="306" Margin="45,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="561" RenderTransformOrigin="0.5,0.698"/>
+            <TextBlock HorizontalAlignment="Left" Margin="659,30,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Prikaz Medicinskog kartona pacijenta u kom se nalazi istorija svih dijagnoza koje je imao. Na kraju stranice postoji mogucnost dodavanja nove dijagnoze lijevim klikom misa na dugme dijagnoza. Od korisnika se ocekuje da unese Oznaku, Sifru, Naziv i Latinski naziv dijagnoze. Neophodno je popuniti sva polja. " VerticalAlignment="Top" Width="193"/>
+            <Image HorizontalAlignment="Left" Height="100" Margin="63,344,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
+            <Image Source="anamneza.png" HorizontalAlignment="Left" Height="198" Margin="87,311,0,0" Grid.Row="1" VerticalAlignment="Top" Width="369"/>
+            <TextBlock HorizontalAlignment="Left" Margin="575,323,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Prikaz Anamneze. Ocekuje se unos svih traženih polja. Lijevim klikom na dugme Save - Anemneza se sačuva, lijevim klikom na Discard - odustane se o kreiranja Anamneze." VerticalAlignment="Top" Height="121" Width="296"/>
+        </Grid>
+    </Grid>
+</Window>

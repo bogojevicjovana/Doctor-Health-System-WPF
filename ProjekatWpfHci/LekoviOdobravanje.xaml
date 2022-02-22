@@ -1,0 +1,56 @@
+﻿<Page x:Class="ProjekatWpfHci.LekoviOdobravanje"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjekatWpfHci"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LekoviOdobravanje" Background="White">
+
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top" Background="#D5E1DB" Height="50" FontFamily="Tahoma" FontSize="14">
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Lekovi" Click="MenuItem_Click" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="File" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Edit" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="View" Background="#D5E1DB"/>
+                <MenuItem Header="Help" Margin ="0 0 0 0">
+                    <MenuItem Header="_O Aplikaciji"></MenuItem>
+                </MenuItem>
+
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Operacione sale" Click="MenuItem_Click_1" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Raspored" Click="MenuItem_Click_2" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Termini" Click="MenuItem_Click_3" Background="#D5E1DB"/>
+            </Menu>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="1.3*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Background="DarkGray" Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="8*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Label FontFamily="Calibri"  Margin="20 30 10 10" FontSize="17" FontWeight="Bold">Pretražite lekove za odobravanje:</Label>
+                        <TextBox Margin="0 23 20 10" FontFamily="Calibri" FontSize="15" Width="150" Height="30" Name="txtFilter" TextChanged="txtFilter_TextChanged"/>
+                    </StackPanel>
+
+                    <ListView Grid.Column="1" PreviewMouseLeftButtonUp="LekoviOdobravanjeClick"  HorizontalContentAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="Azure" BorderBrush="Aqua" BorderThickness="10" FontSize="20" FontFamily="Calibri" Grid.Row="1" Margin="0 20 0 0" HorizontalAlignment="Center" Name="lvUsers">
+                        <ListView.View>
+                            <GridView TextElement.FontFamily="Calibri" TextElement.FontSize="20" >
+                                <GridViewColumn Header="Naziv leka" Width="400" DisplayMemberBinding="{Binding nazivLeka}"></GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </Grid>
+            <Frame x:Name="OdobravanjeFrame"></Frame>
+        </DockPanel>
+    </Grid>
+</Page>

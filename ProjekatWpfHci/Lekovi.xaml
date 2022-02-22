@@ -1,0 +1,76 @@
+﻿<Page x:Class="ProjekatWpfHci.Lekovi"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjekatWpfHci"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Lekovi" Background="White">
+
+    <Grid>
+        <DockPanel>
+            <Menu VerticalAlignment="Top" DockPanel.Dock="Top" Background="#D5E1DB" Height="50" FontFamily="Tahoma" FontSize="14">
+                <MenuItem Header="Početna strana" Margin="0 0 0 0" Click="MenuItem_Click_3"></MenuItem>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="File" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Edit" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="View" Background="#D5E1DB"/>
+                <MenuItem Header="Help" Margin ="0 0 0 0">
+                    <MenuItem Header="_O Aplikaciji"></MenuItem>
+                </MenuItem>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Operacione sale" Click="MenuItem_Click" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Raspored" Click="MenuItem_Click_1" Background="#D5E1DB"/>
+                <MenuItem BorderThickness="0" Margin ="0 0 0 0" Header="Termini"  Click="MenuItem_Click_2" Background="#D5E1DB"/>
+            </Menu>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="6*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+
+                <DataGrid ItemsSource="{Binding Lekovii}" IsReadOnly="True"  Grid.Row="1" CanUserAddRows="True" AutoGenerateColumns="False"  FontSize="15" Background="AliceBlue" Height="400" Margin="0 10 0 0" x:Name="LekoviDataGrid" VerticalAlignment="Top">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Naziv" Binding="{Binding nazivLeka}" Width="*">
+                            <DataGridTextColumn.HeaderStyle>
+                                <Style TargetType="DataGridColumnHeader">
+                                    <Setter Property="HorizontalContentAlignment" Value="Center">
+                                    </Setter>
+                                </Style>
+                            </DataGridTextColumn.HeaderStyle>
+                            <DataGridTextColumn.ElementStyle>
+                                <Style>
+                                    <Setter Property="TextBlock.TextWrapping" Value="Wrap"></Setter>
+                                    <Setter Property="TextBlock.TextAlignment" Value="Center"></Setter>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Oznaka" Binding="{Binding sifraLeka}" Width="*">
+                            <DataGridTextColumn.HeaderStyle>
+                                <Style TargetType="DataGridColumnHeader">
+                                    <Setter Property="HorizontalContentAlignment" Value="Center">
+                                    </Setter>
+                                </Style>
+                            </DataGridTextColumn.HeaderStyle>
+                            <DataGridTextColumn.ElementStyle>
+                                <Style>
+                                    <Setter Property="TextBlock.TextWrapping" Value="Wrap"></Setter>
+                                    <Setter Property="TextBlock.TextAlignment" Value="Center"></Setter>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Frame x:Name="LekoviFrame"></Frame>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="Pedro" HorizontalAlignment="Left" Height="23" Margin="87,33,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <Button Content="PretraziLek" Click="Button_Click"></Button>
+                </StackPanel>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Page>
